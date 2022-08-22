@@ -44,12 +44,12 @@ export const translateNotice = function() {
   elementList.forEach(element => {
     console.log(element.innerHTML)
     element.innerHTML = element.innerHTML
-      .replace(/^[\s]+This image has been resized. Click on the /, "这张图片已经被压缩，单击侧边栏中的")
-      .replace(/View larger version/, "显示高清图")
-      .replace(/ link in the sidebar for a high-quality version./, "可以获取更高质量的版本。")
-      .replace(/Hide this message<\/a>\./, "不再提醒</a>")
+      .replace(/^[\s]+This image has been resized. Click on the /, "Bu resim yeniden boyutlandırılmıştır，Şuraya tıklatın:")
+      .replace(/View larger version/, "Daha büyük versiyonunu görüntüle")
+      .replace(/ link in the sidebar for a high-quality version./, "Yüksek kalite versiyonu için kenar çubuğundaki bağlantıya")
+      .replace(/Hide this message<\/a>\./, "Bu mesajı gizle</a>")
       /* 相关父作品 */
-      .replace(/This post belongs to a /, "这张图片从属于一个")
+      .replace(/This post belongs to a /, "Bu gönderi şu kişiye aittir")
       .replace(/parent post<\/a>\./, "相关父作品</a>。")
       /* 相关子作品 */
       .replace(/This post has /, "这张图片从属于一个")
@@ -59,19 +59,19 @@ export const translateNotice = function() {
       .replace(/<\/a>\)/, "</a>")
   })
 }
-
+//Baya devrik olacak, sonra halledeceğim.
 // 翻译点击
 export const translateButtons = function() {
   [
-    ['#highres-show', 'View larger version', '显示高清图'],
-    ['#highres', 'Download larger version', '下载高清图'],
-    ['#png', 'Download PNG', '下载 PNG 图'],
-    ['li#add-to-favs>a', 'Add to favorites', '添加收藏'],
-    ['li#set-avatar>a', 'Set avatar', '设置头像'],
-    ['h4>a.js-posts-show-edit-tab', 'Edit', '编辑'],
-    ['h4>a.js-posts-show-comments-tab', 'Respond', '评论'],
-    ['.pagination>.previous_page', '← Previous', '上一页'],
-    ['.pagination>.next_page', 'Next →', '下一页'],
+    ['#highres-show', 'View larger version', 'Daha büyük versiyonunu görüntüle'],
+    ['#highres', 'Download larger version', 'Daha büyük versiyonunu indir'],
+    ['#png', 'Download PNG', 'PNG'yi indir'],
+    ['li#add-to-favs>a', 'Add to favorites', 'Favorilere ekle'],
+    ['li#set-avatar>a', 'Set avatar', 'Avatar ayarlayın'],
+    ['h4>a.js-posts-show-edit-tab', 'Edit', 'Düzenle'],
+    ['h4>a.js-posts-show-comments-tab', 'Respond', 'Cevapla'],
+    ['.pagination>.previous_page', '← Previous', 'Önceki'],
+    ['.pagination>.next_page', 'Next →', 'Sonraki'],
   ].forEach(data => {
     const [selector, en, cn] = data
     const element = document.querySelector(selector)
