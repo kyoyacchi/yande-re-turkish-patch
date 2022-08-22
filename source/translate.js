@@ -49,12 +49,12 @@ export const translateNotice = function() {
       .replace(/ link in the sidebar for a high-quality version./, "Yüksek kalite versiyonu için kenar çubuğundaki bağlantıya")
       .replace(/Hide this message<\/a>\./, "Bu mesajı gizle</a>")
       /* 相关父作品 */
-      .replace(/This post belongs to a /, "Bu gönderi şuraya ait")
-      .replace(/parent post<\/a>\./, "相关父作品</a>。")
+      .replace(/This post belongs to a /, "Bu gönderi bir")
+      .replace(/parent post<\/a>\./, "Üst öğeye aittir")
       /* 相关子作品 */
       .replace(/This post has /, "这张图片从属于一个")
       .replace(/child posts<\/a>\. \(post #/, "作品集</a>。相关子作品：")
-      .replace(/a child post<\/a>\. \(post #/, "作品集</a>。相关子作品：")
+      .replace(/a child post<\/a>\. \(post #/, "bir alt gönderi：")
       .replace(/<\/a>, <a /, "</a> | <a ")
       .replace(/<\/a>\)/, "</a>")
   })
