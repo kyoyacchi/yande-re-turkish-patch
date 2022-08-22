@@ -49,7 +49,7 @@ export const translateNotice = function() {
       .replace(/ link in the sidebar for a high-quality version./, "Yüksek kalite versiyonu için kenar çubuğundaki bağlantıya")
       .replace(/Hide this message<\/a>\./, "Bu mesajı gizle</a>")
       /* 相关父作品 */
-      .replace(/This post belongs to a /, "Bu gönderi şu kişiye aittir")
+      .replace(/This post belongs to a /, "Bu gönderi şuraya ait")
       .replace(/parent post<\/a>\./, "相关父作品</a>。")
       /* 相关子作品 */
       .replace(/This post has /, "这张图片从属于一个")
