@@ -17,12 +17,12 @@
       <v-list dense>
         <v-list-item dense>
           <v-list-item-title style="cursor: pointer;" @click="showRatingQ = !showRatingQ;">
-            {{ showRatingQ ? '隐藏 Q 级内容' : '显示 Q 级内容' }}
+            {{ showRatingQ ? 'Q düzeyi içeriği gizle' : 'Q dereceli içeriği göster' }}
           </v-list-item-title>
         </v-list-item>
         <v-list-item dense>
           <v-list-item-title style="cursor: pointer;" @click="showRatingE = !showRatingE;">
-            {{ showRatingE ? '隐藏 E 级内容' : '显示 E 级内容' }}
+            {{ showRatingE ? 'E düzeyi içeriği gizle' : 'E düzeyi içeriği göster' }}
           </v-list-item-title>
         </v-list-item>
       </v-list>
@@ -69,8 +69,8 @@
   <v-navigation-drawer v-model="showDrawer" app temporary>
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="title">Yande.re 简体中文</v-list-item-title>
-        <v-list-item-subtitle>浏览器脚本程序</v-list-item-subtitle>
+        <v-list-item-title class="title">Yande.re Türkçe</v-list-item-title>
+        <v-list-item-subtitle>Tarayıcı Betiği</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
 
@@ -78,7 +78,7 @@
 
     <v-list dense nav>
       <v-list-item-content>
-        <v-list-item-title class="title">设置</v-list-item-title>
+        <v-list-item-title class="title">Kur</v-list-item-title>
         <v-list-item-subtitle></v-list-item-subtitle>
       </v-list-item-content>
       <!-- s -->
@@ -87,8 +87,8 @@
           <v-icon>mdi-check</v-icon>
         </v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title>显示 S 分级内容</v-list-item-title>
-          <v-list-item-subtitle>S(safe) 安全的全年龄内容</v-list-item-subtitle>
+          <v-list-item-title>S düzeyi içeriği göster</v-list-item-title>
+          <v-list-item-subtitle>S(güvenli) Her yaş için güvenli içerik</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <!-- q -->
@@ -98,7 +98,7 @@
         </v-list-item-icon>
         <v-list-item-content>
           <v-list-item-title v-text="showRatingQ ? '显示 Q 分级内容' : '隐藏 Q 分级内容'"></v-list-item-title>
-          <v-list-item-subtitle>Q(questionable) 疑似的成人内容</v-list-item-subtitle>
+          <v-list-item-subtitle>Q(şüpheli) Yetişkin içerik olabilir</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <!-- e -->
@@ -108,7 +108,7 @@
         </v-list-item-icon>
         <v-list-item-content>
           <v-list-item-title v-text="showRatingE ? '显示 E 分级内容' : '隐藏 E 分级内容'"></v-list-item-title>
-          <v-list-item-subtitle>E(explicit) 明确的成人内容</v-list-item-subtitle>
+          <v-list-item-subtitle>E(sakıncalı) Müstehcen görüntüler içerebilir</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -120,18 +120,18 @@
         <v-list-item-title class="title">关于</v-list-item-title>
         <v-list-item-subtitle></v-list-item-subtitle>
       </v-list-item-content>
-      <v-list-item link @click="window.open('https://github.com/coderzhaoziwei/yande-re-chinese-patch/blob/main/readme.md')">
+      <v-list-item link @click="window.open('https://github.com/kyoyacchi/yande-re-turkish-patch/blob/main/readme.md')">
         <v-list-item-icon class="mr-2"><v-icon>mdi-file-document-outline</v-icon></v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title>简介</v-list-item-title>
-          <v-list-item-subtitle>说明文档 / 功能介绍</v-list-item-subtitle>
+          <v-list-item-title>Giriş Yap</v-list-item-title>
+          <v-list-item-subtitle>Dokümantasyon / İşlev Tanıtımı</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
-      <v-list-item link @click="window.open('https://github.com/coderzhaoziwei/yande-re-chinese-patch/issues')">
+      <v-list-item link @click="window.open('https://github.com/kyoyacchi/yande-re-turkish-patch/issues')">
         <v-list-item-icon class="mr-2"><v-icon>mdi-github</v-icon></v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title>反馈</v-list-item-title>
-          <v-list-item-subtitle>发现错误 / 提出建议</v-list-item-subtitle>
+          <v-list-item-title>Geri Dön</v-list-item-title>
+          <v-list-item-subtitle>Hata bildirme / Öneri</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <v-list-item link @click="window.open('https://github.com/coderzhaoziwei/yande-re-chinese-patch')">
