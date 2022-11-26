@@ -34,11 +34,11 @@ export const initHotKey = function() {
   const sidebar = document.querySelector("#post-list > div.sidebar") || document.querySelector("#post-view > div.sidebar")
   if (sidebar) {
     sidebar.insertAdjacentHTML("beforeend", "<div>" +
-      "<h5>快捷键说明</h5>" +
+      "<h5>Kısayol Tuşu Açıklaması</h5>" +
       "<div style='color: #ee8888'>上一页：A / ←</div>" +
       "<div style='color: #ee8888'>下一页：D / →</div>" +
-      "<div style='color: #ee8888'>显示当前作品原图：S</div>" +
-      "<div style='color: #ee8888'>显示当前作品来源：W</div>" +
+      "<div style='color: #ee8888'>Mevcut çalışmanın orijinal görüntüsünü göstermek için：S</div>" +
+      "<div style='color: #ee8888'>Mevcut çalışmanın kaynağını göstermek için：W</div>" +
     "</div>")
   }
 
