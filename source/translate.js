@@ -52,8 +52,8 @@ export const translateNotice = function() {
       .replace(/This post belongs to a /, "Bu gönderi bir")
       .replace(/parent post<\/a>\./, "Üst öğeye aittir")
       /* 相关子作品 */
-      .replace(/This post has /, "这张图片从属于一个")
-      .replace(/child posts<\/a>\. \(post #/, "作品集</a>。相关子作品：")
+      .replace(/This post has /, "Bu gönderi")
+      .replace(/child posts<\/a>\. \(post #/, "Alt veriye </a> sahip：")
       .replace(/a child post<\/a>\. \(post #/, "bir alt gönderi：")
       .replace(/<\/a>, <a /, "</a> | <a ")
       .replace(/<\/a>\)/, "</a>")
@@ -65,7 +65,7 @@ export const translateButtons = function() {
   [
     ['#highres-show', 'View larger version', 'Daha büyük versiyonunu görüntüle'],
     ['#highres', 'Download larger version', 'Daha büyük versiyonunu indir'],
-    ['#png', 'Download PNG', 'PNG'yi indir'],
+    ['#png', 'Download PNG', 'PNG\'yi indir'],
     ['li#add-to-favs>a', 'Add to favorites', 'Favorilere ekle'],
     ['li#set-avatar>a', 'Set avatar', 'Avatar ayarlayın'],
     ['h4>a.js-posts-show-edit-tab', 'Edit', 'Düzenle'],
@@ -73,10 +73,10 @@ export const translateButtons = function() {
     ['.pagination>.previous_page', '← Previous', 'Önceki'],
     ['.pagination>.next_page', 'Next →', 'Sonraki'],
   ].forEach(data => {
-    const [selector, en, cn] = data
+    const [selector, en, tr] = data
     const element = document.querySelector(selector)
     if (element) {
-      element.innerText = element.innerText.replace(en, cn)
+      element.innerText = element.innerText.replace(en, tr)
     }
   })
 }
